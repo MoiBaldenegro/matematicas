@@ -1,7 +1,7 @@
-const example = 8
+const example = 7
 
 const factorizacion = (number) => {
-    const processNum =  Math.round(number / 2 ) ?? 0;
+    const processNum =  Math.round(number / 2 ) + 1 ?? 0;
     const nums = [...new Array(processNum)].map((_, index) => index + 1 );
     const filteredNums = nums.filter((i) => {
        return  number % i === 0
